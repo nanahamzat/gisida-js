@@ -1,5 +1,5 @@
 var LAYERS = {
-  "region-boundaries": {
+  "county-boundaries": {
     "label": "Region boundaries",
     "source": {
       "type": "geojson",
@@ -12,6 +12,27 @@ var LAYERS = {
       "line-opacity": 0.6
     },
     "visible": true
+  },
+  "county-labels": {
+    "label": "County labels",
+    "source": {
+      "type": "geojson",
+      "data": "data/ken_adm1_centroids.geojson"
+    },
+    "type": "symbol",
+    "minZoom": 0,
+    "paint": {
+      "text-color": "#000",
+      "text-halo-color": "#fff",
+      "text-halo-width": 1.3,
+      "text-halo-blur": 1
+    },
+    "layout": {
+      "text-size": 14,
+      "text-field": "{Adm1Name}",
+      "text-transform": "uppercase"
+    },
+    "visible": false
   },
   "ken-health-sites": {
     "label": "Kenya Health Sites",

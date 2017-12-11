@@ -1,8 +1,11 @@
 var CATEGORIES = {
   "Boundaries": {
-      layers: ["region-boundaries"]
+      layers: ["county-boundaries"]
   },
-  "Health": {
+  "Labels": {
+    layers: ["county-labels"]
+  },
+  "Health Infrastructure": {
     layers: ["ken-health-sites"]
   },
 }
