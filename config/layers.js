@@ -93,4 +93,66 @@ var LAYERS = {
     "visible": false,
     "credit": "Health Spending Per Capita"
   },
+
+  "ken-health-sites-completeness": {
+    "label": "Kenya Health Sites Completness",
+    "source": {
+      "type": "geojson",
+      "data": "data/ken_health_sites.geojson",
+    },
+    "type": "circle",
+    "minZoom": 0,
+    "paint": {
+      "circle-opacity": 0.8,
+      "circle-stroke-color": "#fff",
+      "circle-stroke-width": 1,
+      "circle-stroke-opacity": 1,
+      "circle-radius": {
+        "base": 10,
+        "stops": [[8, 10], [12, 15], [22, 20]]
+      },
+      "circle-stroke-color": "#ccc",
+      "circle-opacity": 0.6,
+      "circle-color": {
+        "property": "completeness",
+        "type": "interval",
+        "stops": [
+          [20, "#2ECC40"],
+          [50, "#FF851B"],
+          [100, "#FF4136"]]
+      }
+    },
+    "categories": {
+      "breaks": "no",
+      "label": ["0-5%", "6-10%", "+10%"],
+      "type": ["1", "2"],
+      "shape": ["circle-lg", "circle-lg", "circle-lg"],
+      "color": ["#2ECC40", "#FF851B", "#FF4136"]
+    },
+    "credit": "% Completeness",
+    "visible": false,
+  },
+  "health-spending-circles": {
+    "label": "% Health spending per person by county",
+    "source": {
+      "type": "vector",
+      "layer": "ken_adm1_centroids-1b1p68",
+      "url": "mapbox://ona.1wfeceam",
+      "data": "data/health_spending_per_capita.csv",
+      "join": ["Adm1Name", "County"]
+    },
+    "property": "Heath_Spending_Per_Person_",
+    "type": "circle",
+    "minZoom": 0,
+    "radius-range": ['6', '9', '12', '15', '18', '21', '24', '27', '30'],
+    "categories": {
+      "shape": true,
+      "breaks": "no",
+      "color": ["#2ca25f", "#feb24c", "#f03b20"],
+      "limit": [15, 25, 60],
+      "label": ["Above 60%", "15% - 25%", "below 15%"],
+    },
+    "credit": "% Health spending per person",
+    "visible": false,
+  }
 };

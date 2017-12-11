@@ -9,6 +9,6 @@ var CATEGORIES = {
     layers: ["health-spending"]
   },
   "Health Infrastructure": {
-    layers: ["ken-health-sites"]
+    layers: ["ken-health-sites", "health-spending-circles", "ken-health-sites-completeness"]
   },
 }
