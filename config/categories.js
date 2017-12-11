@@ -1,5 +1,8 @@
 var CATEGORIES = {
-    Boundaries: {
+  "Boundaries": {
       layers: ["region-boundaries"]
-    },
+  },
+  "Health": {
+    layers: ["ken-health-sites"]
+  },
 }
