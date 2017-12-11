@@ -8,7 +8,7 @@ var config =
       appNameDesc: "This is a demo side for Gisida",
       appColor: "darkslategrey",
       mapDefaultStyle: 'mapbox://styles/mapbox/light-v9',
-      mapAccessToken: 'pk.eyJ1Ijoib25hIiwiYSI6IlVYbkdyclkifQ.0Bz-QOOXZZK01dq4MuMImQ',
+      mapAccessToken: 'pk.eyJ1Ijoib25hIiwiYSI6ImNqYjJudzFtcDhnNmkycXFlY3ZoMW9scGsifQ.Q9YHAvRPKAzxycV_rQ4_zg',
       mapCenter: [36.25523246528451, 0.3479203009165701],
       mapZoom: 5.731788351807636,
     },

@@ -1,0 +1,23 @@
+{
+  "name": "Gisida-demo",
+  "version": "0.0.1",
+  "description": "A map visualization dashboard builder.",
+  "devDependencies": {
+    "portfinder": "^1.0.13",
+    "watch-http-server": "^0.7.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "whs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onaio/gisida-js.git"
+  },
+  "author": "Ona Systems Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onaio/gisida-js/issues"
+  },
+  "homepage": "http://gisida.onalabs.org"
+}
