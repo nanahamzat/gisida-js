@@ -167,8 +167,7 @@ var LAYERS = {
       }
     },
     "popup": {
-      "header": "name",
-      "body": "Completeness: {{completeness}}%"
+      "body": "<b>{{name}}</b><br>Completeness: {{completeness}}%"
     },
     "categories": {
       "breaks": "no",
