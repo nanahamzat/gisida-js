@@ -5,7 +5,7 @@ var config =
       apiAccessToken: '673957472f8ef650054a6c3b993e5362411526a3',
       appIcon: "/assets/img/gisida-logo.png",
       appName: "GISIDA",
-      appNameDesc: "This is a demo side for Gisida",
+      appNameDesc: "This is a demo site for Gisida",
       appColor: "darkslategrey",
       mapDefaultStyle: 'mapbox://styles/mapbox/light-v9',
       mapAccessToken: 'pk.eyJ1Ijoib25hIiwiYSI6ImNqYjJudzFtcDhnNmkycXFlY3ZoMW9scGsifQ.Q9YHAvRPKAzxycV_rQ4_zg',
