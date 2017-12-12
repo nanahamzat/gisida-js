@@ -3,7 +3,7 @@ var CATEGORIES = {
     layers: ["county-boundaries", "county-labels"]
   },
   "Health Facilities": {
-    layers: ["ken-health-sites", "ken-health-sites-completeness"]
+    layers: ["ken-health-sites"]
   },
   "Indicators": {
     layers: ["malaria", "bednets", "health-spending"]
