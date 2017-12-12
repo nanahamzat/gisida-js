@@ -1,14 +1,12 @@
 var CATEGORIES = {
-  "Boundaries": {
-      layers: ["county-boundaries"]
+  "County Borders": {
+      layers: ["county-boundaries","county-labels"]
   },
-  "Labels": {
-    layers: ["county-labels"]
+  "Health Facilities": {
+    layers: ["ken-health-sites"]
   },
   "Indicators": {
-    layers: ["health-spending"]
+    layers: ["malaria","bednets", "health-spending"]
   },
-  "Health Infrastructure": {
-    layers: ["ken-health-sites", "health-spending-circles", "ken-health-sites-completeness"]
-  },
+
 }
