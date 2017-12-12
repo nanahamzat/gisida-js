@@ -133,6 +133,7 @@ var LAYERS = {
     "source": {
       "type": "geojson",
       "data": "data/ken_health_sites.geojson",
+      "join": []
     },
     "type": "circle",
     "minZoom": 0,
@@ -141,10 +142,19 @@ var LAYERS = {
       "circle-stroke-color": "#fff",
       "circle-stroke-width": 1,
       "circle-stroke-opacity": 1,
-      "circle-radius": {
-        "base": 10,
-        "stops": [[8, 10], [12, 15], [22, 20]]
-      },
+      "circle-radius": ['^', // get square root for radius
+                          ['/', // divide area by PI
+                            ['/', // divide data value by a constant
+                              ['-', // subtract a set amount to diversify the data
+                                ["number", ["get", "completeness"]],
+                                27
+                                ],
+                              .0125 // a constant to scale data values
+                            ],
+                            ["pi"]
+                          ],
+                          0.5 // x^0.5 === √x
+                        ],
       "circle-stroke-color": "#ccc",
       "circle-opacity": 0.6,
       "circle-color": {
@@ -156,9 +166,15 @@ var LAYERS = {
           [100, "#FF4136"]]
       }
     },
+    "popup": {
+      "header": "name",
+      "body": "Completeness: {{completeness}}%"
+    },
     "categories": {
       "breaks": "no",
       "label": ["0-5%", "6-10%", "+10%"],
+      "label": ["25-30%", "31-40%", "+41%"],
+      "limit": [30, 40, 100],
       "type": ["1", "2"],
       "shape": ["circle-lg", "circle-lg", "circle-lg"],
       "color": ["#2ECC40", "#FF851B", "#FF4136"]
