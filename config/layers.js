@@ -54,7 +54,7 @@ var LAYERS = {
       },
       "text-field": "{name} - ({type})",
       "text-offset": [0, 2],
-      "icon-image": "triangle-11",
+      "icon-image": "hospital-11",
       "icon-allow-overlap": true
     },
     "visible": false,
@@ -73,7 +73,7 @@ var LAYERS = {
     "property": "Heath_Spending_Per_Person_",
     "categories": {
       "breaks": "yes",
-      "color": "YlOrRd",
+      "color": "Greens",
       "clusters": 7
     },
     "labels": {
@@ -88,7 +88,7 @@ var LAYERS = {
     },
     "popup": {
       "header": "region",
-      "body": " % Health Spending per person - {{Heath_Spending_Per_Person_}} %"
+      "body": " Health Spending per person: {{Heath_Spending_Per_Person_}}%"
     },
     "visible": false,
     "credit": "Health Spending Per Capita"
