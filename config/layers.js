@@ -1,6 +1,6 @@
 var LAYERS = {
   "county-boundaries": {
-    "label": "Region boundaries",
+    "label": "County Boundaries",
     "source": {
       "type": "geojson",
       "data": "data/ken_adm1.geojson"
